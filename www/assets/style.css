@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background-image: linear-gradient(
+    #fc997c 5%,
+    white 50%,
+    white 80%,
+    #396eb0 100%
+  );
+}
+
+nav {
+  background-color: #2e4c6d;
+  padding: 5px 5px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+main {
+  margin: 20px auto;
+}
+
+.musicLink a {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline 0.15em rgba(46, 76, 109, 0);
+  transition: text-decoration-color 300ms;
+  font-weight: bold;
+  color: rgb(46, 76, 109);
+}
+
+.musicLink a:hover {
+  /* color: #daddfc; */
+  text-decoration-color: rgba(252, 161, 134, 1);
+  color: #fca186;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #daddfc;
+  text-decoration: underline 0.15em rgba(218, 221, 252, 0);
+  transition: text-decoration-color 300ms;
+}
+
+nav a:hover {
+  /* font-weight: bold; */
+  color: #daddfc;
+  text-decoration-color: rgba(218, 221, 252, 1);
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* Properties of flex column style */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.headerContent {
+  margin: 0 auto;
+}
+
+.sidebarContent {
+  padding: 10px;
+}
+
+#content {
+  /* background-color: yellow; */
+  flex-basis: 100%;
+  color: #2e4c6d;
+}
+
+#content article {
+  border: 1px solid #2e4c6d;
+  border-radius: 5px;
+  margin: 10px 20px 20px auto;
+  padding: 20px;
+}
+
+#content article p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#favoriteFood {
+  overflow: auto;
+}
+
+#favoriteFood img {
+  float: right;
+  max-width: 7em;
+  margin: 0px 2em;
+}
+
+#hobby {
+  overflow: auto;
+}
+
+#hobby img {
+  float: left;
+  max-width: 6em;
+  margin: 0px 2em;
+}
+
+#sidebar {
+  flex-basis: 20%;
+  /* background-color: blue; */
+  /* flex-direction: row-reverse; */
+  /* text-align: center; */
+  /* color: #f1e0ac; */
+}
+
+#profilePic {
+  width: 10em;
+  /* height: 300px; */
+  /* max-width: 500px; */
+}
+
+#sidebar section table {
+  width: 100%;
+  /* border: 1px solid #2e4c6d; */
+  font-size: 13px;
+}
+
+#sidebar header {
+  text-align: center;
+  color: #2e4c6d;
+}
+
+.jumbotron {
+  font-size: 18px;
+  padding: 30px;
+  background-color: #2e4c6d;
+  text-align: center;
+  color: #daddfc;
+}
+
+.footerContent {
+  font-size: 12px;
+  padding: 10px;
+  background-color: #2e4c6d;
+  text-align: center;
+  color: #daddfc;
+  font-weight: 400;
+}
+
+.footerContent img {
+  max-width: 1.5em;
+  cursor: pointer;
+}
+
+.full {
+  flex-basis: 100%;
+}
+
+/* Media query for screens <= 600px */
+@media screen and (max-width: 600px) {
+  .flex-container-row {
+    flex-direction: column;
+  }
+
+  #content article {
+    margin: 20px auto 20px auto;
+  }
+
+  #hobby img,
+  #favoriteFood img {
+    float: none;
+    max-width: 7em;
+    display: block;
+    margin: 20px auto;
+  }
+
+  #introduction h1,
+  #favoriteFood h1,
+  #hobby h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  nav li a {
+    font-size: 13px;
+  }
+}

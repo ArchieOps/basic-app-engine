@@ -1,0 +1,137 @@
+<!--
+Benerin interaktif Description
+Efek pada navbar dan anchornya
+Background 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="flex-container-column card">
+        <div class="flex-container-row">
+            <header class="headerContent full">
+                <div class="jumbotron">
+                    <h1>My Personal Profile</h1>
+                    <h3>Hello, welcome to my profile page! It's nice to meet you!</h3>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#introduction"> Introduction</a></li>
+                        <li><a href="#favoriteFood"> Favorite Food</a></li>
+                        <li><a href="#hobby">Hobby</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main>
+            <div class="flex-container-row">
+                <!-- <div class="flex-container-row"> -->
+                    <div id="content">
+                        <article class="card">
+                            <div id="introduction">
+                                <h1>Introduction</h1>
+                                <p>Halo, perkenalkan, nama saya Jonathan Leonardo Hasiholan Simanjuntak, tapi teman - teman saya biasa memanggil saya Ardo. Saya adalah seorang mahasiswa semester 6 di kampus Institut Teknologi Sepuluh Nopember Surabaya. Jurusan yang saya tekuni adalah Teknik Informatika. Saya memilih jurusan tersebut karena saya senang untuk mengikuti perkembangan teknologi, khususnya dalam bidang Teknologi Antar Jaringan dan Cloud Security. Saya harap kedepannya saya dapat lebih giat dan semangat lagi untuk mengembangkan kemampuan yang saya miliki sehingga saya dapat membantu serta memberikan pengaruh yang positif kepada orang - orang disekitar saya. </p>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div id="favoriteFood">
+                                <h1>Favorite Food</h1>
+                                <img src="https://storage.googleapis.com/my-dicoding-submission-bucket1/food.png" alt="Makanan Favorit">
+                                <p>Referensi hidangan makanan yang saya miliki masih sangat terbatas. Alasannya karena saya bukan orang yang suka menggonta - ganti menu makanan saya jika saya sudah menemukan hidangan yang cocok untuk saya. Oleh karena itu, walaupun ada kesempatan mencoba hidangan baru, saya tetap memilih menu yang sudah pasti cocok bagi saya.</p>
+                                <p>Jika harus memilih menu favorit, maka saya memilih <b>ikan teri halus dicampur kacang dengan sambal balado + sayur singkong tumbuk</b>. Kedua hidangan tersebut dipadukan dengan nasi hangat merupakan menu favorit saya. Terlebih lagi apabila disajikan dengan minuman dingin yang segar, pasti rasanya akan lebih nikmat.</p>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div id="hobby">
+                                <h1>Hobby</h1>
+                                <img src="https://storage.googleapis.com/my-dicoding-submission-bucket1/music.png" alt="Mendengarkan Musik">
+                                <p>Seperti orang - orang kebanyakan, saya juga memiliki sebuah hobi. Hobi saya saat ini adalah mendengarkan musik. Genre musik favorit saya adalah Japanese City Pop dan Traditional Jazz atau juga biasa disebut dengan New Orleans Jazz. Ada banyak sekali judul - judul lagu dari kedua genre tersebut yang dapat saya putar berulang - ulang. Salah satu favorit saya adalah lagu dari <span class="musicLink"><a href="https://www.youtube.com/watch?v=SNq4zqTN_DQ" target="_blank">ANRI - Last Summer Whisper</a></span> dan juga aransemen ulang yang dibawakan oleh <span class="musicLink"><a href="https://www.youtube.com/watch?v=hJP3fhan75o" target="_blank">Tuba Skinny - Storyville Blues</a></span>.</p>
+                            </div>
+                        </article>
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="flex-container-row"> -->
+                    <aside id="sidebar">
+                        <div class="sidebarContent card">
+                            <header>
+                                <h2>Description</h2>
+                                <p>Something about me</p>
+                                <figure>
+                                    <img id="profilePic" src="https://storage.googleapis.com/my-dicoding-submission-bucket1/profile.jpg" alt="Profile Picture">
+                                </figure>
+                            </header>
+                            <section>
+                                <table id="descProfile">
+                                    <tbody>
+                                        <tr>
+                                           <td colspan="3" style="background-color: #2e4c6d; text-align: center; font-weight: bold; color: #daddfc;;">Informasi Pribadi</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>Nama</td>
+                                            <td colspan="2">Jonathan Leonardo Hasiholan Simanjuntak</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Umur</td>
+                                            <td colspan="2">21 Tahun</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tanggal Lahir</td>
+                                            <td colspan="2">13 Agustus 2000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hobi</td>
+                                            <td colspan="2">Mendengarkan Musik</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"><br></td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td colspan="3" style="background-color: #2e4c6d; text-align: center; font-weight: bold; color: #daddfc;;">Kontak Pribadi</td>
+                                         </tr>
+                                         <tr>
+                                            <td>Email</td>
+                                            <td colspan="2">jonathanleonardo123@gmail.com</td>
+                                         </tr>
+                                         
+                                         <tr>
+                                            <td>Whatsapp</td>
+                                            <td colspan="2">+6281917677313</td>
+                                         </tr>
+                                         <tr>
+                                            <td colspan="3"><br></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div> 
+                    </aside>
+                <!-- </div> -->
+
+            </div>
+        </main>
+        
+        <div class="flex-container-row">
+            <footer class="footerContent full">
+                <p>&copy; All Right Reserved</p>
+                <p>Made with  &nbsp; &#10084; &nbsp; by Jonathan Leonardo</p>
+                <a href="https://github.com/ArchieOps" target="_blank" id="githubLink"><img src="https://storage.googleapis.com/my-dicoding-submission-bucket1/github-icon2.png" alt="Github Link"></a>
+            </footer>
+        </div>
+
+    </div>
+    <script src="assets/main.js"></script>
+</body>
+</html>
